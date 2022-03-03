@@ -7,7 +7,8 @@ import CheckoutModal from "./components/CheckoutModal/CheckoutModal";
 import { uiActions } from "./store/ui-slice";
 import { sendCartData, fetchCartData } from "./store/cart-actions.js";
 import Notification from "./components/Notification/Notification";
-import OrderModal from "../src/components/OrderModal/OrderModal";
+import OrderModal from "./components/OrderModal/OrderModal";
+
 let isInitial = true;
 
 function App() {
@@ -36,13 +37,14 @@ function App() {
   const closeModalHandler = () => {
     dispatch(uiActions.showCheckOutModal());
   };
-  const orderHandler = () => {
-    dispatch(uiActions.showCheckOutModal());
-    dispatch(uiActions.showOrderModal());
-  };
   const closeOrderModalHandler = () => {
     dispatch(uiActions.showOrderModal());
   };
+  const orderHandler = () => {
+    dispatch(uiActions.showOrderModal());
+    dispatch(uiActions.showCheckOutModal());
+  };
+
   return (
     <Fragment>
       {notification && (
@@ -52,10 +54,10 @@ function App() {
           message={notification.message}
         />
       )}
+      {showOrderModal && <OrderModal onClose={closeOrderModalHandler} />}
       {showModal && (
         <CheckoutModal onClose={closeModalHandler} onOrder={orderHandler} />
       )}
-      {showOrderModal && <OrderModal onClose={closeOrderModalHandler} />}
 
       <Layout>
         {showCart && <Cart />}

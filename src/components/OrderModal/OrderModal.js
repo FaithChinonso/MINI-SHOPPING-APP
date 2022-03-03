@@ -1,11 +1,11 @@
 import styles from "./OrderModal.module.css";
-import Modal from "../../Modal/Modal";
-import Lottie from "react-lottie";
+import OverModal from "../../Modal/OverModal";
+import Lottie from "lottie-react";
 import animationData from "../../assets/Lottie/lottie.json";
 
 const OrderModal = (props) => {
   return (
-    <Modal onClose={props.onClose}>
+    <OverModal onClose={props.onClose}>
       <Lottie
         animationData={animationData}
         autoPlay
@@ -15,7 +15,7 @@ const OrderModal = (props) => {
       <button className={styles.button} onClick={props.onClose}>
         Close
       </button>
-    </Modal>
+    </OverModal>
   );
 };
 
