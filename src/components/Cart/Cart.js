@@ -32,7 +32,9 @@ const Cart = (props) => {
         <span> ₦{numberWithCommas(totalAmount.toFixed(2))}</span>
       </div>
       <div className={classes.actions}>
-        {items.length > 0 && <button className={classes.button}>Order</button>}
+        {items.length > 0 && (
+          <button className={classes.button}>Checkout</button>
+        )}
       </div>
     </Card>
   );
