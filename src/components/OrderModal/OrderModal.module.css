@@ -1,0 +1,31 @@
+.lottieSuccess {
+  height: 50vh;
+  width: 50vw;
+  margin: 0 auto;
+}
+.button {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.4rem;
+  padding: 2.1rem 5.1rem;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: transparent;
+  border-color: #ec6464;
+  color: #ec6464;
+  text-decoration: none;
+  border: none;
+}
+
+.button:hover,
+.button:active {
+  color: #fff;
+  background-color: #ec6464;
+}
+.buttonContainer {
+  display: flex;
+}

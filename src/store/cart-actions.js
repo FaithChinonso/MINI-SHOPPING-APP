@@ -19,13 +19,7 @@ export const fetchCartData = () => {
 
     try {
       const cartData = await fetchData();
-      dispatch(
-        uiActions.showNotification({
-          status: "success",
-          title: "Success!",
-          message: "Fetch cart data successfully!",
-        })
-      );
+
       dispatch(
         cartActions.replaceCart({
           items: cartData.items || [],

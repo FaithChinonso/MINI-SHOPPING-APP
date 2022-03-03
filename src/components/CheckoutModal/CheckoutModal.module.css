@@ -1,0 +1,60 @@
+.button {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.4rem;
+  padding: 2.1rem 5.1rem;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: transparent;
+  border-color: #ec6464;
+  color: #ec6464;
+  text-decoration: none;
+  border: none;
+}
+
+.button:hover,
+.button:active {
+  color: #fff;
+  background-color: #ec6464;
+}
+.buttonContainer {
+  display: flex;
+}
+h2 {
+  text-align: center;
+}
+.checkoutContainer {
+  display: flex;
+  flex-direction: column;
+}
+.checkoutContent {
+  border: 1px solid #ec6464;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.checkoutContent h5,
+.checkoutContent div {
+  color: #ec6464;
+  font-size: 1.25rem;
+}
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5rem;
+}
+.total div {
+  font-size: 1.5rem;
+  color: #ec6464;
+}
+.total div span {
+  font-size: 1.25rem;
+  color: #000;
+  margin-right: 1rem;
+}

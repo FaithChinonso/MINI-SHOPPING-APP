@@ -1,10 +1,15 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { uiActions } from "../../store/ui-slice";
 import Card from "../UI/Card";
 import classes from "./Cart.module.css";
 import CartItem from "./CartItem";
 
 const Cart = (props) => {
+  const dispatch = useDispatch();
   const { items, totalAmount } = useSelector((state) => state.cart);
+  const submitOrderHandler = () => {
+    dispatch(uiActions.showCheckOutModal());
+  };
   const numberWithCommas = (x) => {
     return Number(x).toLocaleString("en-US", {
       minimumFractionDigits: 2,
@@ -33,7 +38,9 @@ const Cart = (props) => {
       </div>
       <div className={classes.actions}>
         {items.length > 0 && (
-          <button className={classes.button}>Checkout</button>
+          <button className={classes.button} onClick={submitOrderHandler}>
+            Checkout
+          </button>
         )}
       </div>
     </Card>
