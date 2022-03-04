@@ -1,4 +1,6 @@
 // import uuidv4 from "uuid";
+import { useSelector, useDispatch } from "react-redux";
+import { uiActions } from "../../store/ui-slice";
 import ProductItem from "./ProductItem";
 import classes from "./Products.module.css";
 import Yettie from "../../assets/image/vneckGown.png";
@@ -125,21 +127,43 @@ const DUMMY_PRODUCTS = [
   },
 ];
 const Products = (props) => {
+  const dispatch = useDispatch();
+  const loadedItems = useSelector((state) => state.ui.loadedItems);
+  const loadMoreHandler = () => {
+    dispatch(uiActions.loadMore());
+  };
+  const loadLessHandler = () => {
+    dispatch(uiActions.loadLess());
+  };
+  const slice = DUMMY_PRODUCTS.slice(0, loadedItems);
+
   return (
     <section className={classes.products}>
       <h2>Buy your favorite products</h2>
+
       <ul>
-        {DUMMY_PRODUCTS.map((product) => (
-          <ProductItem
-            key={product.id}
-            id={product.id}
-            title={product.title}
-            price={product.price}
-            description={product.description}
-            img={product.src}
-          />
-        ))}
+        <div className={classes.productsContent}>
+          {slice.map((product) => (
+            <ProductItem
+              key={product.id}
+              id={product.id}
+              title={product.title}
+              price={product.price}
+              description={product.description}
+              img={product.src}
+            />
+          ))}
+        </div>
       </ul>
+
+      <div className={classes.loadButtons}>
+        <button className={classes.buttonLoad} onClick={loadMoreHandler}>
+          Load More
+        </button>
+        <button className={classes.buttonLoad} onClick={loadLessHandler}>
+          Load Less
+        </button>
+      </div>
     </section>
   );
 };

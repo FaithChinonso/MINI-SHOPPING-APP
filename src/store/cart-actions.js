@@ -3,28 +3,31 @@ import { cartActions } from "./cart-slice";
 
 export const fetchCartData = () => {
   return async (dispatch) => {
-    const fetchData = async () => {
-      const response = await fetch(
-        "https://react-http-99426-default-rtdb.firebaseio.com/cart.json"
-      );
+    let storedCartData;
+    // const fetchData = async () => {
+    //   const response = await fetch(
+    //     "https://react-http-99426-default-rtdb.firebaseio.com/cart.json"
+    //   );
 
-      if (!response.ok) {
-        throw new Error("Could not fetch cart data!");
-      }
+    //   if (!response.ok) {
+    //     throw new Error("Could not fetch cart data!");
+    //   }
 
-      const data = await response.json();
+    //   const data = await response.json();
 
-      return data;
-    };
+    //   return data;
+    // };
 
     try {
-      const cartData = await fetchData();
+      const storage = localStorage.getItem("cartData");
+      if (storage) storedCartData = JSON.parse(storage);
+      // const cartData = await fetchData();
 
       dispatch(
         cartActions.replaceCart({
-          items: cartData.items || [],
-          totalQuantity: cartData.totalQuantity,
-          totalAmount: cartData.totalAmount,
+          items: storedCartData.items || [],
+          totalQuantity: storedCartData.totalQuantity,
+          totalAmount: storedCartData.totalAmount,
         })
       );
     } catch (error) {
@@ -50,6 +53,14 @@ export const sendCartData = (cart) => {
     );
 
     const sendRequest = async () => {
+      localStorage.setItem(
+        "cartData",
+        JSON.stringify({
+          items: cart.items,
+          totalQuantity: cart.totalQuantity,
+          totalAmount: cart.totalAmount,
+        })
+      );
       const response = await fetch(
         "https://react-http-99426-default-rtdb.firebaseio.com/cart.json",
         {

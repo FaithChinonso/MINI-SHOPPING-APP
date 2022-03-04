@@ -23,15 +23,15 @@ const ProductItem = (props) => {
   };
   return (
     <li className={classes.item}>
-      <Card>
+      <Card className={classes.productContainer}>
         <header>
           <h3>{title}</h3>
-          <div className={classes.price}>
-            ₦{numberWithCommas(price.toFixed(2))}
-          </div>
         </header>
         <img src={img} className={classes.image} />
         <p>{description}</p>
+        <div className={classes.price}>
+          ₦{numberWithCommas(price.toFixed(2))}
+        </div>
         <div className={classes.actions}>
           <button onClick={addToCartHandler}>Add to Cart</button>
         </div>

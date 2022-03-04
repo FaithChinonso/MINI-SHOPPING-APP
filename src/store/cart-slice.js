@@ -7,6 +7,7 @@ const cartSlice = createSlice({
     totalQuantity: 0,
     changed: false,
     totalAmount: 0,
+    formData: [],
   },
   reducers: {
     replaceCart(state, action) {
@@ -48,6 +49,9 @@ const cartSlice = createSlice({
         existingItem.totalPrice = existingItem.totalPrice - existingItem.price;
         state.totalAmount = state.totalAmount - existingItem.price;
       }
+    },
+    submitOrder(state, action) {
+      const formInput = action.payload;
     },
   },
 });

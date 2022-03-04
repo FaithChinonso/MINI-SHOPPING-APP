@@ -1,6 +1,11 @@
+.productContainer {
+  width: 25rem;
+  border: 1px solid #d7d7d7;
+}
 .item h3 {
   margin: 0.5rem 0;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 .item header {
@@ -12,9 +17,11 @@
 .price {
   border-radius: 30px;
   padding: 0.15rem 1.5rem;
-  background-color: #3a3a3a;
-  color: white;
-  font-size: 1.5rem;
+  width: max-content;
+  background-color: transparent;
+  color: #ec6464;
+  font-size: 1.2rem;
+  border: 1px solid #ec6464;
 }
 
 .item p {
@@ -28,4 +35,9 @@
 .image {
   width: 20rem;
   height: 20rem;
+}
+@media (max-width: 600px) {
+  .productContainer {
+    width: 80vw;
+  }
 }
