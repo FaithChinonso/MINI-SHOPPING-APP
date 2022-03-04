@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MINI-SHOPPING-APP/static/css/main.532899ca.chunk.css",
-    "main.js": "/MINI-SHOPPING-APP/static/js/main.b2550081.chunk.js",
-    "main.js.map": "/MINI-SHOPPING-APP/static/js/main.b2550081.chunk.js.map",
+    "main.js": "/MINI-SHOPPING-APP/static/js/main.c7d9e318.chunk.js",
+    "main.js.map": "/MINI-SHOPPING-APP/static/js/main.c7d9e318.chunk.js.map",
     "runtime-main.js": "/MINI-SHOPPING-APP/static/js/runtime-main.412d22fa.js",
     "runtime-main.js.map": "/MINI-SHOPPING-APP/static/js/runtime-main.412d22fa.js.map",
     "static/js/2.a62f14b2.chunk.js": "/MINI-SHOPPING-APP/static/js/2.a62f14b2.chunk.js",
@@ -10,14 +10,16 @@
     "index.html": "/MINI-SHOPPING-APP/index.html",
     "static/css/main.532899ca.chunk.css.map": "/MINI-SHOPPING-APP/static/css/main.532899ca.chunk.css.map",
     "static/js/2.a62f14b2.chunk.js.LICENSE.txt": "/MINI-SHOPPING-APP/static/js/2.a62f14b2.chunk.js.LICENSE.txt",
+    "static/media/Nwobii.e5f4581b.png": "/MINI-SHOPPING-APP/static/media/Nwobii.e5f4581b.png",
     "static/media/T.E.A.df794e06.png": "/MINI-SHOPPING-APP/static/media/T.E.A.df794e06.png",
     "static/media/awetu.ea3527cb.png": "/MINI-SHOPPING-APP/static/media/awetu.ea3527cb.png",
     "static/media/charmz.141b07b6.png": "/MINI-SHOPPING-APP/static/media/charmz.141b07b6.png",
-    "static/media/chisara.b4aef698.png": "/MINI-SHOPPING-APP/static/media/chisara.b4aef698.png",
+    "static/media/chisarara.c1c3c566.png": "/MINI-SHOPPING-APP/static/media/chisarara.c1c3c566.png",
     "static/media/fifi.7c6cb999.png": "/MINI-SHOPPING-APP/static/media/fifi.7c6cb999.png",
     "static/media/laCurve.da0559ff.png": "/MINI-SHOPPING-APP/static/media/laCurve.da0559ff.png",
     "static/media/lowKeyy.82b5d730.png": "/MINI-SHOPPING-APP/static/media/lowKeyy.82b5d730.png",
     "static/media/luluPop.73a5cd9e.png": "/MINI-SHOPPING-APP/static/media/luluPop.73a5cd9e.png",
+    "static/media/maureenn.b2bb0c65.png": "/MINI-SHOPPING-APP/static/media/maureenn.b2bb0c65.png",
     "static/media/mutula.65d1bc10.png": "/MINI-SHOPPING-APP/static/media/mutula.65d1bc10.png",
     "static/media/omaGown.fd24fe9a.png": "/MINI-SHOPPING-APP/static/media/omaGown.fd24fe9a.png",
     "static/media/onChez.8e30632b.png": "/MINI-SHOPPING-APP/static/media/onChez.8e30632b.png",
@@ -30,6 +32,6 @@
     "static/js/runtime-main.412d22fa.js",
     "static/js/2.a62f14b2.chunk.js",
     "static/css/main.532899ca.chunk.css",
-    "static/js/main.b2550081.chunk.js"
+    "static/js/main.c7d9e318.chunk.js"
   ]
 }
