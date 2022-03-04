@@ -31,3 +31,8 @@
 .actions {
   text-align: right;
 }
+@media (max-width: 600px) {
+  .total {
+    font-size: 1.25rem;
+  }
+}

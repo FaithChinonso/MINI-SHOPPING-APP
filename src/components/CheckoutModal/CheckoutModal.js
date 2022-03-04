@@ -1,21 +1,35 @@
 import React, { Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { uiActions } from "../../store/ui-slice";
 import styles from "./CheckoutModal.module.css";
 import Modal from "../../Modal/Modal";
+import DeliveryForm from "../DeliveryForm/DeliveryForm";
+import { uiActions } from "../../store/ui-slice";
 
 const CheckoutModal = (props) => {
   const dispatch = useDispatch();
   const { items, totalAmount, totalQuantity } = useSelector(
     (state) => state.cart
   );
+  const showCheckout = useSelector((state) => state.ui.showCheckoutForm);
 
   const numberWithCommas = (x) => {
     return Number(x).toLocaleString("en-US", {
       minimumFractionDigits: 2,
     });
   };
-
+  const checkOutHandler = () => {
+    dispatch(uiActions.showCheckout());
+  };
+  const modalActions = (
+    <div className={styles.buttonContainer}>
+      <button className={styles.button} onClick={props.onClose}>
+        Cancel
+      </button>
+      <button className={styles.button} onClick={checkOutHandler}>
+        Order
+      </button>
+    </div>
+  );
   return (
     <Fragment>
       <Modal onClose={props.onClose}>
@@ -45,14 +59,10 @@ const CheckoutModal = (props) => {
               {numberWithCommas(totalAmount.toFixed(2))}
             </div>
           </div>
-        </div>
-        <div className={styles.buttonContainer}>
-          <button className={styles.button} onClick={props.onClose}>
-            Cancel
-          </button>
-          <button className={styles.button} onClick={props.onOrder}>
-            Order
-          </button>
+          {showCheckout && (
+            <DeliveryForm onClose={props.onClose} onOrder={props.onOrder} />
+          )}
+          {!showCheckout && modalActions}
         </div>
       </Modal>
     </Fragment>

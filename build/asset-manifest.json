@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MINI-SHOPPING-APP/static/css/main.f57b162d.chunk.css",
-    "main.js": "/MINI-SHOPPING-APP/static/js/main.08cf5647.chunk.js",
-    "main.js.map": "/MINI-SHOPPING-APP/static/js/main.08cf5647.chunk.js.map",
+    "main.css": "/MINI-SHOPPING-APP/static/css/main.f8d37946.chunk.css",
+    "main.js": "/MINI-SHOPPING-APP/static/js/main.19c18e63.chunk.js",
+    "main.js.map": "/MINI-SHOPPING-APP/static/js/main.19c18e63.chunk.js.map",
     "runtime-main.js": "/MINI-SHOPPING-APP/static/js/runtime-main.412d22fa.js",
     "runtime-main.js.map": "/MINI-SHOPPING-APP/static/js/runtime-main.412d22fa.js.map",
     "static/js/2.fc184365.chunk.js": "/MINI-SHOPPING-APP/static/js/2.fc184365.chunk.js",
     "static/js/2.fc184365.chunk.js.map": "/MINI-SHOPPING-APP/static/js/2.fc184365.chunk.js.map",
     "index.html": "/MINI-SHOPPING-APP/index.html",
-    "static/css/main.f57b162d.chunk.css.map": "/MINI-SHOPPING-APP/static/css/main.f57b162d.chunk.css.map",
+    "static/css/main.f8d37946.chunk.css.map": "/MINI-SHOPPING-APP/static/css/main.f8d37946.chunk.css.map",
     "static/js/2.fc184365.chunk.js.LICENSE.txt": "/MINI-SHOPPING-APP/static/js/2.fc184365.chunk.js.LICENSE.txt",
     "static/media/T.E.A.df794e06.png": "/MINI-SHOPPING-APP/static/media/T.E.A.df794e06.png",
     "static/media/awetu.ea3527cb.png": "/MINI-SHOPPING-APP/static/media/awetu.ea3527cb.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.412d22fa.js",
     "static/js/2.fc184365.chunk.js",
-    "static/css/main.f57b162d.chunk.css",
-    "static/js/main.08cf5647.chunk.js"
+    "static/css/main.f8d37946.chunk.css",
+    "static/js/main.19c18e63.chunk.js"
   ]
 }

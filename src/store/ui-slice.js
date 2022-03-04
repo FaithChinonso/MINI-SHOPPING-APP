@@ -7,6 +7,7 @@ const uiSlice = createSlice({
     notification: {},
     showModal: false,
     showOrderModal: false,
+    showCheckoutForm: false,
   },
   reducers: {
     toggle(state) {
@@ -24,6 +25,9 @@ const uiSlice = createSlice({
     },
     showOrderModal(state) {
       state.showOrderModal = !state.showOrderModal;
+    },
+    showCheckout(state) {
+      state.showCheckoutForm = !state.showCheckoutForm;
     },
   },
 });

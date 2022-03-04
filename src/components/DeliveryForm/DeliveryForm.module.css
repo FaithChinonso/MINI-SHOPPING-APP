@@ -1,0 +1,59 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  border: 1px solid #ec6464;
+  padding: 2rem;
+}
+.inputGroup {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+label {
+  font-size: 1.25rem;
+}
+.inputGroup input {
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  border: none;
+  background-color: rgba(236, 101, 101, 0.1);
+}
+.inputGroup input:checked,
+.inputGroup input:hover,
+.inputGroup input:target {
+  outline: none;
+}
+li {
+  list-style-type: none;
+}
+.buttonGroup {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+input[type="radio" i] {
+  background-color: #ec6464 !important;
+  cursor: pointer;
+  border: rgba(236, 101, 101, 0.1);
+}
+@media (max-width: 600px) {
+  .inputGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+  label {
+    font-size: 1rem;
+  }
+  .inputGroup input {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
