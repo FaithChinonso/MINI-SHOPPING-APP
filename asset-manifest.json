@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MINI-SHOPPING-APP/static/css/main.a78f753f.chunk.css",
+    "main.css": "/MINI-SHOPPING-APP/static/css/main.e3059a8e.chunk.css",
     "main.js": "/MINI-SHOPPING-APP/static/js/main.ed08c998.chunk.js",
     "main.js.map": "/MINI-SHOPPING-APP/static/js/main.ed08c998.chunk.js.map",
     "runtime-main.js": "/MINI-SHOPPING-APP/static/js/runtime-main.412d22fa.js",
@@ -8,7 +8,7 @@
     "static/js/2.d6708b99.chunk.js": "/MINI-SHOPPING-APP/static/js/2.d6708b99.chunk.js",
     "static/js/2.d6708b99.chunk.js.map": "/MINI-SHOPPING-APP/static/js/2.d6708b99.chunk.js.map",
     "index.html": "/MINI-SHOPPING-APP/index.html",
-    "static/css/main.a78f753f.chunk.css.map": "/MINI-SHOPPING-APP/static/css/main.a78f753f.chunk.css.map",
+    "static/css/main.e3059a8e.chunk.css.map": "/MINI-SHOPPING-APP/static/css/main.e3059a8e.chunk.css.map",
     "static/js/2.d6708b99.chunk.js.LICENSE.txt": "/MINI-SHOPPING-APP/static/js/2.d6708b99.chunk.js.LICENSE.txt",
     "static/media/T.E.A.df794e06.png": "/MINI-SHOPPING-APP/static/media/T.E.A.df794e06.png",
     "static/media/awetu.ea3527cb.png": "/MINI-SHOPPING-APP/static/media/awetu.ea3527cb.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.412d22fa.js",
     "static/js/2.d6708b99.chunk.js",
-    "static/css/main.a78f753f.chunk.css",
+    "static/css/main.e3059a8e.chunk.css",
     "static/js/main.ed08c998.chunk.js"
   ]
 }
