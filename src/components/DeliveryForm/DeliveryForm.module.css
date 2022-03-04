@@ -2,24 +2,29 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
   border: 1px solid #ec6464;
   padding: 2rem;
 }
 .inputGroup {
   display: flex;
   justify-content: space-around;
-  gap: 1.5rem;
+  align-items: center;
   margin-bottom: 1rem;
+
+  width: 100%;
 }
 label {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  width: 20%;
 }
 .inputGroup input {
-  padding: 1.25rem;
-  font-size: 1.25rem;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 70%;
   border: none;
   background-color: rgba(236, 101, 101, 0.1);
+  justify-self: flex-end;
 }
 .inputGroup input:checked,
 .inputGroup input:hover,
@@ -51,9 +56,11 @@ input[type="radio" i] {
   }
   label {
     font-size: 1rem;
+    width: 100%;
   }
   .inputGroup input {
     padding: 1rem;
     font-size: 1rem;
+    width: 100%;
   }
 }
