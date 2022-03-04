@@ -40,24 +40,28 @@
 
 .modal {
   position: fixed;
-  top: 10vh;
-  left: 5%;
-  width: 40%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 80vw;
   height: auto;
   background-color: white;
   padding: 1rem;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(9, 31, 3, 0.25);
   z-index: 30;
-  animation: slide-down 300ms ease-out forwards;
 }
 
 @media (min-width: 768px) {
   .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
+    width: 30rem;
+    left: calc(50% - 15rem);
+    animation: slide-down 300ms ease-out forwards;
   }
 }
+/* @media (max-width: 600px) {
+  .modal
+} */
 
 @keyframes slide-down {
   from {

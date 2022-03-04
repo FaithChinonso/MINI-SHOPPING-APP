@@ -31,13 +31,13 @@ export const fetchCartData = () => {
         })
       );
     } catch (error) {
-      dispatch(
-        uiActions.showNotification({
-          status: "error",
-          title: "Error!",
-          message: "Fetching cart data failed!",
-        })
-      );
+      // dispatch(
+      //   uiActions.showNotification({
+      //     status: "error",
+      //     title: "Error!",
+      //     message: "Fetching cart data failed!",
+      //   })
+      // );
     }
   };
 };

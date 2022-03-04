@@ -32,6 +32,7 @@ h2 {
   flex-direction: column;
   max-height: 90vh;
   overflow: auto;
+  padding-bottom: 5rem;
 }
 .checkoutContent {
   border-bottom: 2px solid #ec6464;

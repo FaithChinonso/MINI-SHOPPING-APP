@@ -5,7 +5,7 @@
   max-width: 30rem;
   background-color: transparent;
   border: 1px solid #d7d7d7;
-  color: white;
+  color: #fff;
 
   margin-top: 9rem;
 }
@@ -13,6 +13,7 @@
 .cart h2 {
   font-size: 1.25rem;
   margin: 0.5rem 0;
+  color: rgb(44, 43, 43) !important;
 }
 
 .cart ul {
@@ -27,6 +28,7 @@
   font-weight: bold;
   font-size: 1.5rem;
   margin: 1rem 0;
+  color: rgb(44, 43, 43) !important;
 }
 
 .actions {
