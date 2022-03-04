@@ -15,9 +15,11 @@ import Preshy from "../../assets/image/preshy.png";
 import Mutula from "../../assets/image/mutula.png";
 import Bundy from "../../assets/image/T.E.A.png";
 import TEA from "../../assets/image/ruffledTop.png";
-import Chisara from "../../assets/image/chisara.png";
+import Chisara from "../../assets/image/chisarara.png";
 import onChez from "../../assets/image/onChez.png";
 import luluPop from "../../assets/image/luluPop.png";
+import maureen from "../../assets/image/maureenn.png";
+import nwobi from "../../assets/image/Nwobii.png";
 
 const DUMMY_PRODUCTS = [
   {
@@ -107,8 +109,8 @@ const DUMMY_PRODUCTS = [
   {
     id: "p13",
     price: 13000,
-    title: "Chisara Two Piece ",
-    description: "Made with Crepe",
+    title: "Chisara Bling Gown ",
+    description: "Made with Sequin",
     src: Chisara,
   },
   {
@@ -124,6 +126,20 @@ const DUMMY_PRODUCTS = [
     title: "LuluPop Blazer",
     description: "Made with Cashmere",
     src: luluPop,
+  },
+  {
+    id: "p16",
+    price: 7000,
+    title: "Maureen Vintage",
+    description: "Made with Cotton",
+    src: maureen,
+  },
+  {
+    id: "p17",
+    price: 14000,
+    title: "NNwobi Denim set",
+    description: "Made with Denim",
+    src: nwobi,
   },
 ];
 const Products = (props) => {
@@ -157,12 +173,16 @@ const Products = (props) => {
       </ul>
 
       <div className={classes.loadButtons}>
-        <button className={classes.buttonLoad} onClick={loadMoreHandler}>
-          Load More
-        </button>
-        <button className={classes.buttonLoad} onClick={loadLessHandler}>
-          Load Less
-        </button>
+        {loadedItems < DUMMY_PRODUCTS.length && (
+          <button className={classes.buttonLoad} onClick={loadMoreHandler}>
+            Load More
+          </button>
+        )}
+        {loadedItems > 6 && (
+          <button className={classes.buttonLoad} onClick={loadLessHandler}>
+            Load Less
+          </button>
+        )}
       </div>
     </section>
   );
