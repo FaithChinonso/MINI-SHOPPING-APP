@@ -1,7 +1,7 @@
 import styles from "./OrderModal.module.css";
 import OverModal from "../../Modal/OverModal";
 import Lottie from "lottie-react";
-import animationData from "../../assets/Lottie/lottie.json";
+import animationData from "../../assets/Lottie/order.json";
 
 const OrderModal = (props) => {
   return (

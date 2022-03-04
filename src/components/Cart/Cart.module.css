@@ -1,7 +1,12 @@
 .cart {
+  /* position: absolute;
+  top: 0; */
+  /* z-index: 10; */
   max-width: 30rem;
   background-color: #917272;
   color: white;
+
+  margin-top: 9rem;
 }
 
 .cart h2 {

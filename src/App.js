@@ -61,7 +61,7 @@ function App() {
 
       <Layout>
         {showCart && <Cart />}
-        <Products />
+        {!showCart && <Products />}
       </Layout>
     </Fragment>
   );

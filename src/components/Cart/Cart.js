@@ -3,6 +3,7 @@ import { uiActions } from "../../store/ui-slice";
 import Card from "../UI/Card";
 import classes from "./Cart.module.css";
 import CartItem from "./CartItem";
+import Modal from "../../Modal/Modal";
 
 const Cart = (props) => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const Cart = (props) => {
     });
   };
   return (
-    <Card className={classes.cart}>
+    <Card className={classes.cart} id="cart">
       <h2>Your Shopping Cart</h2>
       <ul>
         {items.map((item) => (
