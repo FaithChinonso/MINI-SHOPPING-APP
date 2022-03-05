@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/MINI-SHOPPING-APP/static/css/main.532899ca.chunk.css",
-    "main.js": "/MINI-SHOPPING-APP/static/js/main.c7d9e318.chunk.js",
-    "main.js.map": "/MINI-SHOPPING-APP/static/js/main.c7d9e318.chunk.js.map",
+    "main.css": "/MINI-SHOPPING-APP/static/css/main.ce13b672.chunk.css",
+    "main.js": "/MINI-SHOPPING-APP/static/js/main.5b98c407.chunk.js",
+    "main.js.map": "/MINI-SHOPPING-APP/static/js/main.5b98c407.chunk.js.map",
     "runtime-main.js": "/MINI-SHOPPING-APP/static/js/runtime-main.412d22fa.js",
     "runtime-main.js.map": "/MINI-SHOPPING-APP/static/js/runtime-main.412d22fa.js.map",
-    "static/js/2.a62f14b2.chunk.js": "/MINI-SHOPPING-APP/static/js/2.a62f14b2.chunk.js",
-    "static/js/2.a62f14b2.chunk.js.map": "/MINI-SHOPPING-APP/static/js/2.a62f14b2.chunk.js.map",
+    "static/js/2.5cd1ef64.chunk.js": "/MINI-SHOPPING-APP/static/js/2.5cd1ef64.chunk.js",
+    "static/js/2.5cd1ef64.chunk.js.map": "/MINI-SHOPPING-APP/static/js/2.5cd1ef64.chunk.js.map",
     "index.html": "/MINI-SHOPPING-APP/index.html",
-    "static/css/main.532899ca.chunk.css.map": "/MINI-SHOPPING-APP/static/css/main.532899ca.chunk.css.map",
-    "static/js/2.a62f14b2.chunk.js.LICENSE.txt": "/MINI-SHOPPING-APP/static/js/2.a62f14b2.chunk.js.LICENSE.txt",
+    "static/css/main.ce13b672.chunk.css.map": "/MINI-SHOPPING-APP/static/css/main.ce13b672.chunk.css.map",
+    "static/js/2.5cd1ef64.chunk.js.LICENSE.txt": "/MINI-SHOPPING-APP/static/js/2.5cd1ef64.chunk.js.LICENSE.txt",
     "static/media/Nwobii.e5f4581b.png": "/MINI-SHOPPING-APP/static/media/Nwobii.e5f4581b.png",
     "static/media/T.E.A.df794e06.png": "/MINI-SHOPPING-APP/static/media/T.E.A.df794e06.png",
     "static/media/awetu.ea3527cb.png": "/MINI-SHOPPING-APP/static/media/awetu.ea3527cb.png",
     "static/media/charmz.141b07b6.png": "/MINI-SHOPPING-APP/static/media/charmz.141b07b6.png",
     "static/media/chisarara.c1c3c566.png": "/MINI-SHOPPING-APP/static/media/chisarara.c1c3c566.png",
+    "static/media/fay.a34932d9.png": "/MINI-SHOPPING-APP/static/media/fay.a34932d9.png",
     "static/media/fifi.7c6cb999.png": "/MINI-SHOPPING-APP/static/media/fifi.7c6cb999.png",
+    "static/media/hero.d4410178.png": "/MINI-SHOPPING-APP/static/media/hero.d4410178.png",
     "static/media/laCurve.da0559ff.png": "/MINI-SHOPPING-APP/static/media/laCurve.da0559ff.png",
     "static/media/lowKeyy.82b5d730.png": "/MINI-SHOPPING-APP/static/media/lowKeyy.82b5d730.png",
     "static/media/luluPop.73a5cd9e.png": "/MINI-SHOPPING-APP/static/media/luluPop.73a5cd9e.png",
@@ -23,15 +25,15 @@
     "static/media/mutula.65d1bc10.png": "/MINI-SHOPPING-APP/static/media/mutula.65d1bc10.png",
     "static/media/omaGown.fd24fe9a.png": "/MINI-SHOPPING-APP/static/media/omaGown.fd24fe9a.png",
     "static/media/onChez.8e30632b.png": "/MINI-SHOPPING-APP/static/media/onChez.8e30632b.png",
-    "static/media/preshy.e7289403.png": "/MINI-SHOPPING-APP/static/media/preshy.e7289403.png",
+    "static/media/presh.f0d1420e.png": "/MINI-SHOPPING-APP/static/media/presh.f0d1420e.png",
     "static/media/ruffledTop.f9c85fbb.png": "/MINI-SHOPPING-APP/static/media/ruffledTop.f9c85fbb.png",
     "static/media/turtlenneck.f2997934.png": "/MINI-SHOPPING-APP/static/media/turtlenneck.f2997934.png",
     "static/media/vneckGown.10338b99.png": "/MINI-SHOPPING-APP/static/media/vneckGown.10338b99.png"
   },
   "entrypoints": [
     "static/js/runtime-main.412d22fa.js",
-    "static/js/2.a62f14b2.chunk.js",
-    "static/css/main.532899ca.chunk.css",
-    "static/js/main.c7d9e318.chunk.js"
+    "static/js/2.5cd1ef64.chunk.js",
+    "static/css/main.ce13b672.chunk.css",
+    "static/js/main.5b98c407.chunk.js"
   ]
 }
