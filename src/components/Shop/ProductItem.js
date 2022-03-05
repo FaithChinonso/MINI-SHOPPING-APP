@@ -35,6 +35,7 @@ const ProductItem = (props) => {
         <div className={classes.actions}>
           <button onClick={addToCartHandler}>Add to Cart</button>
         </div>
+        <div className={classes.tag}>New</div>
       </Card>
     </li>
   );

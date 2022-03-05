@@ -1,6 +1,7 @@
 .productContainer {
   width: 25rem;
   border: 1px solid #d7d7d7;
+  position: relative;
 }
 .item h3 {
   margin: 0.5rem 0;
@@ -21,7 +22,6 @@
   background-color: transparent;
   color: #ec6464;
   font-size: 1.2rem;
-  border: 1px solid #ec6464;
 }
 
 .item p {
@@ -32,9 +32,31 @@
   display: flex;
   justify-content: flex-end;
 }
+.actions button {
+  border: 1px solid #000;
+  border-radius: 0;
+  color: #000;
+  font-weight: bold;
+  padding: 1rem 3rem;
+}
+.actions button:hover {
+  border: none;
+  color: #fff;
+  transform: scale(0.8);
+  transition: all 0.5s ease-in-out;
+  background-color: #ec6464;
+}
 .image {
-  width: 20rem;
-  height: 20rem;
+  width: 22rem;
+  height: 22rem;
+}
+.tag {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
 }
 @media (max-width: 600px) {
   .productContainer {

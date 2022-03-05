@@ -1,0 +1,114 @@
+.heroImage {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(236, 101, 101, 0.2);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroImage img {
+  margin-top: 3rem;
+  height: 30rem;
+}
+.heroTitle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.heroTitleText {
+  color: #fff;
+  padding: 1rem 1.5rem;
+  width: 10rem;
+  background-color: black;
+  font-size: 1.5rem;
+}
+.socailIcons {
+  display: flex;
+  justify-content: space-around;
+
+  width: 10rem;
+}
+.heroButtons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+.heroButtonGroupOne,
+.heroButtonGroupTwo {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.heroButtonGroupOne:hover,
+.heroButtonGroupTwo:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.heroButtonGroupOne {
+  align-items: flex-end;
+}
+.heroButtonGroupTwo {
+  align-items: flex-start;
+
+  border-top: 1px solid rgb(236, 101, 101, 0.1);
+}
+.heroButtonAbout,
+.heroButtonShop {
+  transition: all 0.75s ease-in-out;
+  border: none;
+}
+.heroButtonShop {
+  border-top: 1px solid rgb(236, 101, 101, 0.9);
+}
+.heroButtonAbout {
+  border-bottom: 1px solid rgb(236, 101, 101, 0.9);
+}
+.heroButtonAbout:hover,
+.heroButtonShop:hover {
+  background-color: transparent;
+}
+.heroButtonShop:hover {
+  border-top: none;
+  border-bottom: 1px solid rgb(236, 101, 101, 0.9);
+  transform: translateY(-1rem);
+}
+.heroButtons:hover ~ .heroTitle {
+  display: block;
+  top: 25%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+.heroButtonAbout:hover {
+  border-top: 1px solid rgb(236, 101, 101, 0.9);
+  border-bottom: none;
+  transform: translateY(1rem);
+}
+.heroFooter {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 1.5rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+.footerCopyright {
+  font-size: 0.5rem;
+  color: #000;
+}

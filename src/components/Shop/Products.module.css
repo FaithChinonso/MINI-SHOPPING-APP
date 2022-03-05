@@ -8,7 +8,7 @@
   flex-wrap: wrap;
 }
 .products h2 {
-  color: white;
+  color: #000;
   margin: 2rem auto;
   text-align: center;
   text-transform: uppercase;
@@ -30,4 +30,22 @@
   color: #ec6464;
 
   margin: 4rem;
+}
+.pagination {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+
+  border: 1px solid #d7d7d7;
+}
+.backButton {
+  border: none;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+.backButton:hover {
+  border-top: 1px solid #000;
+  border-bottom: none;
+  background-color: transparent;
+  color: #000;
 }

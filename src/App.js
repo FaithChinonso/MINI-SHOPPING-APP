@@ -8,6 +8,7 @@ import { uiActions } from "./store/ui-slice";
 import { sendCartData, fetchCartData } from "./store/cart-actions.js";
 import Notification from "./components/Notification/Notification";
 import OrderModal from "./components/OrderModal/OrderModal";
+import WelcomePage from "./components/WelcomePage/WelcomePage";
 
 let isInitial = true;
 
@@ -18,6 +19,8 @@ function App() {
   const cart = useSelector((state) => state.cart);
   const notification = useSelector((state) => state.ui.notification);
   const showOrderModal = useSelector((state) => state.ui.showOrderModal);
+  const shopIsVisible = useSelector((state) => state.ui.shopIsVisible);
+  const aboutIsVisible = useSelector((state) => state.ui.aboutIsVisible);
 
   useEffect(() => {
     dispatch(fetchCartData());
@@ -44,25 +47,37 @@ function App() {
     dispatch(uiActions.showOrderModal());
     dispatch(uiActions.showCheckOutModal());
   };
-
+  const shopLoaderHandler = () => {
+    dispatch(uiActions.showShop());
+  };
+  const aboutLoaderHandler = () => {
+    dispatch(uiActions.showAbout());
+  };
   return (
     <Fragment>
-      {notification && (
+      {/* {notification && (
         <Notification
           status={notification.status}
           title={notification.title}
           message={notification.message}
         />
-      )}
+      )} */}
       {showOrderModal && <OrderModal onClose={closeOrderModalHandler} />}
       {showModal && (
         <CheckoutModal onClose={closeModalHandler} onOrder={orderHandler} />
       )}
 
-      <Layout>
-        {showCart && <Cart />}
-        {!showCart && <Products />}
-      </Layout>
+      {shopIsVisible ? (
+        <Layout>
+          {showCart && <Cart />}
+          {!showCart && <Products onClose={shopLoaderHandler} />}
+        </Layout>
+      ) : (
+        <WelcomePage
+          onShopOpen={shopLoaderHandler}
+          onAboutOpen={aboutLoaderHandler}
+        />
+      )}
     </Fragment>
   );
 }

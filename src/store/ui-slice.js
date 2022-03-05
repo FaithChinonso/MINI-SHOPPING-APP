@@ -9,6 +9,8 @@ const uiSlice = createSlice({
     showOrderModal: false,
     showCheckoutForm: false,
     loadedItems: 6,
+    shopIsVisible: false,
+    aboutIsVisible: false,
   },
   reducers: {
     toggle(state) {
@@ -37,6 +39,12 @@ const uiSlice = createSlice({
       if (state.loadedItems > 6) {
         state.loadedItems = state.loadedItems - 6;
       }
+    },
+    showShop(state) {
+      state.shopIsVisible = !state.shopIsVisible;
+    },
+    showAbout(state) {
+      state.aboutIsVisible = !state.aboutIsVisible;
     },
   },
 });

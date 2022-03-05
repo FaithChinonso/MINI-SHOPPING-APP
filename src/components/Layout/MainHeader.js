@@ -4,7 +4,7 @@ import classes from "./MainHeader.module.css";
 const MainHeader = (props) => {
   return (
     <header className={classes.header}>
-      <h1>ShopFay</h1>
+      <div className={classes.headerText}>ShopFay</div>
       <nav>
         <ul>
           <li>
